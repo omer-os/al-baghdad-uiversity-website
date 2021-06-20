@@ -1,0 +1,219 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+*{
+    transition: all .2s;
+}
+.moreAbout , .mabout2{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgb(167, 167, 167);
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.moreAboutTitle{
+    font-size: 4vmin;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(16,46,94);
+}
+
+.logo{
+    width: 19vh;
+    margin-top: 10px;
+}
+.navRight{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: capitalize;
+    margin-right: 25px;
+}.navRight li a{
+    padding: 0px 25px 0px 25px;
+    font-size: 1rem;
+    transition: color .3s ease-in;
+}
+.navRight li:hover a{
+    color: rgb(180, 21, 21);
+}
+.sec1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 20px;
+}.sec1Right{
+    margin-left: 20px;
+}.sec1Right img{
+    width: 50vmin;
+}.sec1Left p{
+    font-size: 4vmin;
+    color: rgb(85, 85, 85);
+}.sec1Left h1{
+    font-size: 5vmin;
+}
+.showMenuBtn{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}.line{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+
+.learn-more{
+    font-size: 3.3vmin;
+    border: none;
+    border-radius: 5px;
+    margin-left: 38vmin;
+    margin-top: 5vmin;
+    padding: 5px;
+    background-color: rgb(6, 11, 87);
+    color: white;
+    cursor: pointer;
+}.learn-more:hover{
+    transform: scale(.95);
+}
+
+
+.form{
+    background-color: rgba(11, 9, 82, 0.747);
+    width: 380px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width:700px){
+    .sec1{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .form{
+        width: 80%;
+    }
+    .learn-more{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .sec1Right img{
+        width: 40vmin;
+    }
+
+    .moreAbout,
+    .mabout2{
+        width: 80%;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 539px){
+    .navRight{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        position:absolute;
+        top: 54px;
+        background-color: rgb(16,46,94);        
+        visibility: hidden;
+    }.navRight li {
+        margin: 10px 0px;
+        font-size: 20px
+    }
+    .showMenuBtn{
+        visibility: visible;
+    }
+    .ShowNavRight{
+        visibility: visible;
+    }
+}
+
+
+
+
+/* ---------------- about page ------------------ */
+.sec1About{
+    width: 90%;
+    margin: auto;
+}
+.Title{
+    font-size: 5vmin;
+    color: rgb(20, 20, 124);
+    margin: 4vmin 0;
+    text-transform: capitalize;
+}
+.sec1Aboutp1{
+    font-size: 3.2vmin;
+    background-color: rgba(149, 165, 233, 0.493);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.sec1Abputp2{
+    font-size: 3.2vmin;
+    background-color: rgba(149, 165, 233, 0.493);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}.sec1Abputp2 img{
+    width: 40vmin;
+    margin-right: 20px;
+}.sec1Abputp2 p{
+    max-width: 640px;
+}
+
+
+.name, .subject, textarea{
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}.send{
+    border-radius: 6px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+}
+.Ti{
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 0 10px 0;
+    text-transform: capitalize;
+}
+
+em{
+    font-style: none;
+    font-size: 1.4rem;
+    color: rgb(180, 180, 180);
+}
